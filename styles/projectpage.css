@@ -1,0 +1,30 @@
+#projectMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% auto;
+  font-family: "Kanit", sans-serif;
+}
+#projectMain h2 {
+  width: 50%;
+  color: #285480;
+  font-size: 42px;
+  margin: 0 0 2% 0;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0px #181818;
+}
+
+#projectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projectContent img {
+  width: 55%;
+  width: 350px;
+  width: clamp(250px, 80%, 60rem);
+  margin: 1% 0;
+  border: 2px solid #181818;
+  box-shadow: 5px 5px 8px #181818;
+}/*# sourceMappingURL=projectpage.css.map */
