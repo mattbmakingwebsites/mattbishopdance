@@ -10,7 +10,8 @@ $textColor: #01207C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: clamp(20px, 2%, 2rem) auto;
+    // margin: clamp(20px, 2%, 2rem) auto;
+    margin: 4% 0;
     font-family: 'Kanit', sans-serif;
     // background-color: red;
 
@@ -21,69 +22,317 @@ $textColor: #01207C;
         margin: 0 0 2% 0;
         text-shadow: 0.5px 0.5px 0px $black;
         // background-color: purple;
+        text-align: center;
     }
 }
 
 #aboutContent {
     width: 80%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     // background-color: red;
 
-    figure {
-        width: 60%;
-        // height: 55%;
-        // background: red;
+    // figure {
+    //     width: 69%;
+    //     margin: 2% 0;
+        
+    //     img {
+    //         width: 100%;
+    //         box-shadow: 5px 5px 15px $black;
+    //     }
 
-        img {
-            // width: 55%;
-            width: 100%;
+    //     figcaption {
+    //         margin: 10px 0 0 20px;
+    //         font-style: italic;
+    //     }
+    // }
+
+    #bioContent {
+        display: flex;
+
+        p:nth-child(2) {
+            margin: 2% 0;
+        }
+
+        #aboutText {
+            width: 55%;
+            // width: unset;
+            // background-color: red;
+            margin: 0 20px 0 0;
+        
+            p {
+                // text-align: center;
+                // font-size: 22px;
+                font-size: 18px;
+                // font-size: 16px;
+                line-height: 30px;
+                color: $primary;
+                text-shadow: 0.5px 0.5px 0px $black;
+                // background-color: cyan;
+
+                span {
+                    font-size: 48px;
+                }
+            }
+        }
+    
+        figure {
+            width: 45%;
             // height: 55%;
-            // border: 4px solid $black;
-            box-shadow: 5px 5px 8px $black;
-        }
-
-        figcaption {
-            margin: 10px 0 0 0;
-            font-style: italic;
+            // background: red;
+            float: right;
+            // margin: 0 0 0 2%;
+    
+            img {
+                // width: 55%;
+                width: 100%;
+                // height: 55%;
+                // border: 4px solid $black;
+                box-shadow: 5px 5px 8px $black;
+            }
+    
+            figcaption {
+                margin: 10px 0 0 20px;
+                font-style: italic;
+            }
         }
     }
-}
 
-#aboutText {
-    width: 40%;
-    // width: unset;
-    // background-color: red;
-    margin: 0 20px 0 0;
-
-    p {
-        // text-align: center;
-        // font-size: 22px;
-        font-size: 18px;
-        // font-size: 16px;
-        line-height: 30px;
-        color: $primary;
-        text-shadow: 0.5px 0.5px 0px $black;
-        // background-color: cyan;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    #aboutMain {
-        h2 {
-            width: unset;
-            text-align: center;
-            // margin: 4% 0;
-        }
+    #aboutLighting {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         img {
-            width: 100%;
-            margin: 4% 0;
+            width: 69%;
+            box-shadow: 5px 5px 15px $black;
+            margin: 2%;
         }
+
+        // figure {
+        //     width: 69%;
+        //     margin: 2% 0;
+            
+        //     img {
+        //         width: 100%;
+        //         box-shadow: 5px 5px 15px $black;
+        //     }
+    
+        //     figcaption {
+        //         margin: 10px 0 0 20px;
+        //         font-style: italic;
+        //     }
+        // }
+
+        #lightingText {
+            width: 65%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+            color: $primary;
+            text-shadow: 0.5px 0.5px 0px $black;
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+
+    #artistStatement {
+        width: 85%;
+        // margin: 4% 0 5% 0;
+        margin: 4% 0 0 0;
+        padding: 40px;
+        background-image: linear-gradient(to bottom right, #333, $black);
+        // background-image: linear-gradient(to bottom right, #333, $black);
+        // background-image: linear-gradient(to bottom right, $secondary, $black);
+        // background-image: linear-gradient(to bottom right, $primary, $black);
+        background-image: linear-gradient(to bottom right, #013971, #285480);
+        box-shadow: 0 0 0 4px #000;
+        // box-shadow: 0 0 10px 4px #000;
+        // box-shadow: 0 0 40px 5px #000;
+        border: 4px solid #fff;
+        // border-radius: 60px;
+        transition: 0.8s;
+
+        h3 {
+            text-align: center;
+            color: $primary;
+            color: #fff;
+            font-size: 38px;
+            // margin: 0 0 2% 0;
+            // text-shadow: 0.5px 0.5px 0px $black;
+            text-shadow: 2px 2px 2px #000;
+            transition: 0.8s
+        }
+
+        p {
+            width: 90%;
+            text-align: center;
+            color: #fff;
+            // color: $primary;
+            // padding: 40px;
+            font-size: 22px;
+            line-height: 38px;
+            // text-shadow: 0 0 15px #fff;
+            // text-shadow: 0 0 5px #fff;
+            // text-shadow: 0 0 15px $secondary;
+            // background-image: linear-gradient(to bottom right, #333, $black);
+            // box-shadow: 0 0 10px 8px #000;
+            // border: 4px solid #fff;
+            text-shadow: 2px 2px 2px #000;
+            transition: 0.8s;
+            margin: 3%;
+        }
+    }
+
+    // #artistStatement:hover {
+    //     transform: scale(102%);
+    //     // border-radius: 80px;
+    //     // box-shadow: 0 0 10px 8px #000;
+    //     box-shadow: 0 0 20px 5px #000;
+    //     // box-shadow: 0 0 10px 8px #000;
+
+    //     h3, p {
+    //         // text-shadow: 0 0 3px #fff;
+    //         text-shadow: 4px 4px 4px #000;
+    //     }
+    // }
+
+    #secondImage {
+        box-shadow: 5px 5px 8px $black;
+    }
+
+    #ethos {
+        width: 80%;
+        margin: 5% 0;
+        background-image: linear-gradient(to bottom right, #333, $black);
+        // background-image: linear-gradient(to bottom right, #333, $black);
+        // background-image: linear-gradient(to bottom right, $secondary, $black);
+        // background-image: linear-gradient(to bottom right, $primary, $black);
+        // background-image: linear-gradient(to bottom right, #013971, #285480);
+        // box-shadow: 0 0 10px 8px #000;
+        box-shadow: 0 0 0 4px #000;
+        // box-shadow: 0 0 10px 4px #000;
+        // box-shadow: 0 0 40px 5px #000;
+        border: 4px solid #fff;
+        // border-radius: 60px;
+        transition: 0.8s;
+
+        h3 {
+            text-align: center;
+            color: $primary;
+            color: #fff;
+            font-size: 42px;
+            margin: 4% 0 0 0;
+            // text-shadow: 0.5px 0.5px 0px $black;
+            text-shadow: 2px 2px 2px #000;
+            transition: 0.8s
+        }
+
+        p {
+            color: #fff;
+            // color: $primary;
+            padding: 40px;
+            font-size: 26px;
+            line-height: 48px;
+            // text-shadow: 0 0 15px #fff;
+            // text-shadow: 0 0 5px #fff;
+            // text-shadow: 0 0 15px $secondary;
+            // background-image: linear-gradient(to bottom right, #333, $black);
+            // box-shadow: 0 0 10px 8px #000;
+            // border: 4px solid #fff;
+            text-shadow: 2px 2px 2px #000;
+            transition: 0.8s
+        }
+    }
+
+    #ethos:hover {
+        transform: scale(102%);
+        // border-radius: 80px;
+        // box-shadow: 0 0 10px 8px #000;
+        box-shadow: 0 0 20px 5px #000;
+        // box-shadow: 0 0 10px 8px #000;
+
+        h3, p {
+            text-shadow: 0 0 3px #fff;
+            // text-shadow: 4px 4px 4px #000;
+        }
+    }
+}
+
+// #artistStatement:hover {
+//     transform: scale(1.2);
+//     background-image: none;
+//     box-shadow: 0 0 20px 5px #000;
+// }
+
+@media screen and (max-width: 1250px) {
+
+    #aboutContent {
+        width: 90%;
+
+        #bioContent {
+            flex-direction: column;
+            // align-items: center;
+            // background-color: green;
+            
+            #aboutText {
+                // text-align: center;
+                width: 100%;
+                order: 2;
+                // background-color: red;
+            }
+    
+            figure {
+                width: 90%;
+                margin: 0 auto 2% auto;
+                order: 1;
+            }
+        }
+
+        #aboutLighting {
+        
+            img {
+                margin: 4% 0;
+                width: 90%;
+            }
+
+            #lightingText {
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        #artistStatement {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutMain {
+        margin: 4% 10px 4% 0;
     }
 
     #aboutContent {
-        flex-direction: column;
-        align-items: center;
+
+        #bioContent {
+
+            figure {
+                margin: 4% auto 5% auto;
+            }
+        }
+    }
+
+    #artistStatement {
+        p {
+            // width: 100%;
+            // background-color: red;
+            margin: 10% 0;
+            font-style: italic;
+        }
     }
 }
